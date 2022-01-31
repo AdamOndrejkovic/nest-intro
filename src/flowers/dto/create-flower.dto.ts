@@ -1,1 +1,5 @@
-export class CreateFlowerDto {}
+export class CreateFlowerDto {
+  id: number;
+  name: string;
+  price: string;
+}

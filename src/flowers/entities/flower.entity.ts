@@ -1,1 +1,5 @@
-export class Flower {}
+export class Flower {
+  id: number;
+  name: string;
+  price: string;
+}
