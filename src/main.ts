@@ -6,8 +6,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
-    .setTitle('Flowers API')
     .setTitle('Selling pretty flowers')
+    .setDescription('My new flower shop with nestjs')
     .setVersion('1.0')
     .addTag('flowers')
     .build();
@@ -17,4 +17,5 @@ async function bootstrap() {
 
   await app.listen(3000);
 }
+
 bootstrap();
